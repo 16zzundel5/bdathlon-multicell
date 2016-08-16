@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="120" failures="0" name="org.sbolstandard.core2.ValidationTest" time="1.117" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\bin"/>
+    <property name="java.vm.version" value="25.72-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Zach Zundel\libSBOLj"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Zach Zundel\libSBOLj"/>
+    <property name="java.runtime.version" value="1.8.0_72-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ZACHZU~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.3.9\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\PharosSystems\Core;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\Google\Google Apps Sync\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\CMake\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_72\bin\;C:\Program Files (x86)\Vim\vim74;C:\Users\Zach Zundel\AppData\Local\Programs\Python\Python35-32\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Zach Zundel"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Zach Zundel"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_72\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_72"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.3.9\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[0]" time="0.024"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[1]" time="0.012"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[2]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[3]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[4]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[5]" time="0.012"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[6]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[7]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[8]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[9]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[10]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[11]" time="0.025"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[12]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[13]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[14]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[15]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[16]" time="0.004"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[17]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[18]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[19]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[20]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[21]" time="0.015"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[22]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[23]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[24]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[25]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[26]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[27]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[28]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[29]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[30]" time="0.002"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[31]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[32]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[33]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[34]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[35]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[36]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[37]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[38]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[39]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[40]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[41]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[42]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[43]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[44]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[45]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[46]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[47]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[48]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[49]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[50]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[51]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[52]" time="0.006"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[53]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[54]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[55]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[56]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[57]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[58]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[59]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[60]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[61]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[62]" time="0.006"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[63]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[64]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[65]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[66]" time="0.011"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[67]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[68]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[69]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[70]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[71]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[72]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[73]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[74]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[75]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[76]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[77]" time="0.006"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[78]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[79]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[80]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[81]" time="0.012"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[82]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[83]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[84]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[85]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[86]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[87]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[88]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[89]" time="0.005"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[90]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[91]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[92]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[93]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[94]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[95]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[96]" time="0.006"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[97]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[98]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[99]" time="0.001"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[100]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[101]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[102]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[103]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[104]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[105]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[106]" time="0.002"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[107]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[108]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[109]" time="0.006"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[110]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[111]" time="0.115"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[112]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[113]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[114]" time="0.009"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[115]" time="0.008"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[116]" time="0.01"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[117]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[118]" time="0.007"/>
+  <testcase classname="org.sbolstandard.core2.ValidationTest" name="testValidation[119]" time="0.009"/>
+</testsuite>

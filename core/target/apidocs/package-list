@@ -1,0 +1,4 @@
+org.sbolstandard.core
+org.sbolstandard.core.cli
+org.sbolstandard.core.impl
+org.sbolstandard.core.util
