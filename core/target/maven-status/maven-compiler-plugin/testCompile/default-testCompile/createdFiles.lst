@@ -1,0 +1,7 @@
+org\sbolstandard\core\SBOLTestSuite.class
+org\sbolstandard\core\SBOLReaderTest.class
+org\sbolstandard\core\SBOLDuplicateObjectTest.class
+org\sbolstandard\core\SBOLValidatorTest.class
+org\sbolstandard\core\SBOLWriterTest.class
+org\sbolstandard\core\SBOLTestUtils.class
+org\sbolstandard\core\SBOLAbstractTests.class
