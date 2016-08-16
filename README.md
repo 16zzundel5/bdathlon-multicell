@@ -1,7 +1,7 @@
 # bdathlon-multicell
 SBOL as it currently stands can support multicellular modeling. Each cell can be encapuslated in a `ModuleDefinition`, and all cells and any small molecules within a larger `ModuleDefinition`. To indicate that this data is about a multicellular construct, annotations should be included which point to an ontology for multicellular information.
 
-Such a repository can be found [here.](http://webprotege.stanford.edu/#Edit:projectId=323e1baf-78b7-4694-88bb-79e8a933b269) This is only a very bare-bones example, and it would be built up to include diverse host cells, culture information, and other data.
+Such a repository can be found [here.](http://webprotege.stanford.edu/#Edit:projectId=323e1baf-78b7-4694-88bb-79e8a933b269) This is only a very bare-bones example, and it would be built up to include diverse host cells, culture information, and other data. However, this will allow for the standardization of terms like specific cell lineages, host media preparations, transformation procedures, and other synthetic method data. 
 
 Because it does not require any additional functionality on behalf of SBOL, extant tools can be used to annotate the modules with SBML mathematical models to describe production and interactions, and to simulate the multicellular behavior using any simulator which supports SBML. For example, [iBioSim](http://www.async.ece.utah.edu/ibiosim) can tag the model with SBML mathematical models or simply convert the entire construct to SBML. It can then perform several simulation types and visualize the results.
 
